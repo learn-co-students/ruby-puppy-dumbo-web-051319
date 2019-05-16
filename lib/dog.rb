@@ -4,21 +4,20 @@ attr_accessor :name
 
 @@all = []
 
-def initialize(all)
+def initialize
+  @name 
   @@all << self 
 end 
 
-def clear_all #class method 
-  # `Array#clear` method
-  @@all.clear_all
+def self.clear_all
+  self.clear 
 end 
 
 def all #class method 
   puts self.name 
 end 
 
-def new #class method 
-end 
+
   
 
 end 
