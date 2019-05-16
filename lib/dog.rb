@@ -1,23 +1,19 @@
-class Dog 
+class Dog
+  attr_accessor :name
 
-attr_accessor :name 
+  @@all = []
 
-@@all = []
-
-def initialize
-  @name 
-  @@all << self 
-end 
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
 
 def self.clear_all
-  self.clear 
+  @@all.clear 
 end 
 
-def all #class method 
-  puts self.name 
+def all(name) 
+  puts @@all.name 
 end 
-
-
-  
 
 end 
